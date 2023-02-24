@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR-Code Generator</title>
   <link rel="stylesheet" href="styles.css" >
+  <script src="script/email.js" defer></script>
   <script src="script/vendor.js" defer></script>
   <script src="script/app.js" defer></script>
 </head>
@@ -21,14 +22,14 @@
 
     <div class="left-container">
 
-      <label>Enter Text to generate QR-code</label>
-      <textarea class="text-area" id="text-area" ></textarea>
+      <label>Enter Text/Link/Password to generate QR-code</label>
+      <textarea class="text-area" id="text-area" > Hello World </textarea>
 
       <div class="dimension">
         <label>Width</label>
         <input type="number" id="width" placeholder="150" onchange="setQrDimension()"></input>
   
-        <label>height</label>
+        <label>Height</label>
         <input type="number"  id="height" placeholder="150" onchange="setQrDimension()"></input>
       </div>
      
@@ -38,10 +39,27 @@
     </div>
      <div class="right-container">
 
-        <img id="qr-code" class="qr-code">
+        <div class="right-item-holder">
+
+          <img id="qr-code" class="qr-code">
+          <div class="right-button-holder">
+
+              <button class="download-btn" id="download-btn"> Download</button>
+              <button class="send-email-button" id="email-button"> Email Me</button>
+
+          </div>
+        </div>
+        
+
 
     </div>    
   </div>
+
+  <footer> 
+    <div class="footer">
+      Developed by <a href="https://www.linkedin.com/in/harshit-keshari-296823156/">Harshit Keshari</a>
+    </div>
+  </footer>
   
 </body>
 </html>

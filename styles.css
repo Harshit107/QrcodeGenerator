@@ -1,14 +1,28 @@
 *{
   padding: 0px;
   margin: 0px;
-  background-color: rgb(145, 235, 190);
+  background-color: rgba(117, 213, 136, 0.836);
+  overflow: hidden;
+
+
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding-right: 100px;
+  background: rgb(5,36,0);
+  box-shadow: rgba(57, 31, 91, 0.24) 0 5px 5px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+
+  background: linear-gradient(48deg, rgba(5,36,0,0.9501050420168067) 0%, rgba(9,121,54,1) 18%, rgba(0,255,29,1) 69%);
 }
 
 
 header {
   width: 100vw;
-  height: 120px;
-  background-color: rgb(15, 195, 105);
+  height: 12%;
+  background: rgb(5,36,0);
+  background: linear-gradient(48deg, rgba(5,36,0,0.9501050420168067) 0%, rgba(9,121,54,1) 18%, rgba(0,255,29,1) 69%);
   box-shadow: rgba(57, 31, 91, 0.24) 0 5px 5px,rgba(179, 132, 201, 0.4) 0 8px 12px;
   display: flex;
   flex-direction: row;
@@ -25,12 +39,13 @@ header {
 
 .container {
   display: flex;
+  height: 75%;
 }
 
 .left-container {
 
   width: 100vw;
-  height: 400px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -42,6 +57,7 @@ textarea {
   min-height: 80px;
   text-align: center;
   padding-top: 5px;
+  font-size: 20px;
   margin-bottom: 60px;
 }
 
@@ -95,13 +111,14 @@ button {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
+  padding: 15px 45px;
+  border-radius: 20px;
 }
-button {
+.generate {
   width: fit-content;
   align-self: center;
   margin-top: 50px;
-  padding: 15px 45px;
-  border-radius: 20px;
+
 }
 
 button:hover {
@@ -112,11 +129,49 @@ button:hover {
 
 .right-container {
   width: 100vw;
-  height: 100px;
-  background-color: gray;
+  height:100%;
+  border-left: 3px solid #760664;
 }
+.right-item-holder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
 
+}
 img {
 
-  background-color: #391F5B;
+  border: 2px solid rebeccapurple;
+  object-fit :contain;
+  background: white;
+}
+
+
+.right-button-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+
+}
+
+footer {  
+  height:11%;
+  width: 100vw;
+  background: rgb(5,36,0);
+  box-shadow: rgba(57, 31, 91, 0.24) 0 5px 5px,rgba(179, 132, 201, 0.4) 0 8px 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: linear-gradient(48deg, rgba(5,36,0,0.9501050420168067) 0%, rgba(9,121,54,1) 18%, rgba(0,255,29,1) 69%);
+}
+.footer {
+  background: transparent;
+  height: fit-content;
+  font-style: normal;
+  background: transparent;
 }
